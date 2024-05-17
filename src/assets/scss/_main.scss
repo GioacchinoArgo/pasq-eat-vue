@@ -1,0 +1,31 @@
+@use 'vars' as *;
+
+// Main
+main {
+    height: calc(100vh - 80px);
+    overflow: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #fdfdfd;
+}
+
+// Scrollbar
+main::-webkit-scrollbar {
+    width: 0;
+    height: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-backgound;
+    border-radius: 4px;
+    width: 20px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background-color: $scrollbar-thumb-backgound-hover;
+
+}
+
+main::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-backgound;
+}

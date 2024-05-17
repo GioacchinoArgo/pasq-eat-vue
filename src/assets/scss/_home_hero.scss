@@ -1,0 +1,69 @@
+@use 'vars' as *;
+
+.hero {
+    border-radius: 0 0 100% 100% / 0 0 25% 25%;
+    background-image: linear-gradient(to left, #1e498b, #006fac, #0095bd, #00b8c0, #49daba);
+    background-size: cover;
+
+    .col-12 {
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-align: center;
+        color: $hero-color;
+
+        .hero-img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .hero-col {
+        h1 {
+            font-size: 2rem;
+        }
+
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .hero {
+        .col-lg-6 {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .hero {
+        .col-lg-6 {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-col {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

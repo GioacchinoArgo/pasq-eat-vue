@@ -1,0 +1,98 @@
+@use '../vars' as *;
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.category-card {
+    cursor: pointer;
+}
+
+// Filtri
+
+.list-filter {
+    .icon-bg {
+        border-radius: 39% 61% 45% 55% / 62% 56% 44% 38%;
+        background-color: #27cabc56;
+        padding: 12px;
+
+        &.selected {
+            background-color: #2CCCBC;
+        }
+
+        img {
+            width: 30px;
+            height: auto;
+        }
+
+    }
+
+    li {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.default-cursor {
+    cursor: default;
+}
+
+.side-bar {
+    flex-shrink: 0;
+    flex-basis: 220px;
+}
+
+// Card
+.card {
+    overflow: hidden;
+    height: 220px;
+    border: none;
+    transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 30px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:not(:hover) {
+    box-shadow: none;
+}
+
+.image-box {
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s;
+}
+
+.catogry-label {
+    border-radius: 39% 61% 45% 55% / 62% 56% 44% 38%;
+    background-color: #27cabc56;
+    padding: 8px;
+    margin-top: 5px;
+
+    img {
+        width: 28px;
+        height: auto;
+    }
+}

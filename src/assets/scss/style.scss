@@ -1,0 +1,22 @@
+@use 'vars' as *;
+
+//Style AppLoader
+@use'_app_loader';
+
+// Style Header
+@use '_header';
+
+// Style Main
+@use '_main';
+
+// Style Home Hero
+@use '_home_hero';
+
+// Style Footer
+@use '_footer';
+
+// Home page
+@use 'pages/_home_page';
+
+// Button 
+@use '_button'

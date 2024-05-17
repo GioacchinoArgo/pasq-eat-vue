@@ -1,0 +1,84 @@
+@use 'vars' as *;
+
+.footer {
+    background-color: #fdfdfd;
+    position: relative;
+    margin-top: 100px;
+
+    .container {
+        position: relative;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to left, #1e498b, #006fac, #0095bd, #00b8c0, #49daba);
+        border-radius: 100% 100% 0 0/ 40% 40% 0 0;
+        transform: scaleX(1.5);
+
+    }
+
+    .col-footer {
+        padding-top: 40px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+
+        &::before {
+            border-radius: 60% 60% 0 0/ 90% 90% 0 0;
+            transform: scaleX(1.5);
+
+        }
+
+        .col-footer {
+            padding-top: 70px;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .footer {
+
+        &::before {
+            border-radius: 50% 50% 0 0/ 90% 90% 0 0;
+            transform: scaleX(1.5);
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .footer {
+
+        &::before {
+            border-radius: 50% 50% 0 0/ 90% 90% 0 0;
+            transform: scaleX(1.5);
+
+        }
+
+    }
+}
