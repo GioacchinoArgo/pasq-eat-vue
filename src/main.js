@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+// Supports weights 200-900 Font
+import '@fontsource-variable/nunito';
+
 
 import { createApp } from 'vue'
 //Importiamo il router
